@@ -1,0 +1,17 @@
+dapi53e1c9316faa8dd2c430a8bed870295a-2  --- Databricks token
+
+
+ www2.census.gov/programs-surveys/popest/datasets/
+
+https://github.com/USAFacts/data-data-platform-airflow. As a part of this change, we are also instituting a policy that all code that makes its way into dev must undergo a PR before making its way there. One thing we need to handle as a part of this transition is ensuring that all of the code that was previously committed to dev without review gets a review!
+So, as a result, we have moved all code that was previously in dev to a new branch called ze-staging as of 2024-03-18 10:00:00 PST.
+Determine each logical “set” of dag files that are related to one another
+In your terminal, run git fetch
+In your terminal, run git switch ze-staging
+In your terminal, run git checkout -b <INDIVIDUAL BRANCH NAME HERE>
+In your terminal, run git add <FULL PATH TO FILE> <FULL PATH TO ANOTHER FILE IN SET> <...> <FULL PATH TO LAST FILE IN SET>
+In your terminal, run git commit -m "<DESCRIPTIVE BUT DISTINCT SUMMARY HERE>" -m "<DESCRIPTIVE BUT MORE VERBOSE EXPLANATION OF WHAT THIS COMMIT CONTAINS HERE>"
+In your terminal, run git push
+Initiate PR from <INDIVIDUAL BRANCH> to <dev>
+Repeat the above process for each “set” of dag files that need to be merged to <dev>
+Let us know if you have any further questions!
